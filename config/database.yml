@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: historicity_development
+
+test:
+  <<: *default
+  database: historicity_test
+
+production:
+  <<: *default
+  database: historicity_production
+  username: history
+  password: <%= ENV['HISTORY_DATABASE_PASSWORD'] %>
