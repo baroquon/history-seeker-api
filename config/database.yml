@@ -5,14 +5,14 @@ default: &default
 
 development:
   <<: *default
-  database: historicity_development
+  database: history_seeker_development
 
 test:
   <<: *default
-  database: historicity_test
+  database: history_seeker__test
 
 production:
   <<: *default
-  database: historicity_production
+  database: history_seeker_production
   username: history
   password: <%= ENV['HISTORY_DATABASE_PASSWORD'] %>

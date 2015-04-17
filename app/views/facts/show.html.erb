@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @fact.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @fact.description %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @fact.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @fact.end_date %>
+</p>
+
+<p>
+  <strong>Testable:</strong>
+  <%= @fact.testable %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @fact.lat %>
+</p>
+
+<p>
+  <strong>Lng:</strong>
+  <%= @fact.lng %>
+</p>
+
+<%= link_to 'Edit', edit_fact_path(@fact) %> |
+<%= link_to 'Back', facts_path %>
