@@ -29,14 +29,10 @@ class FactsController < ApplicationController
   def create
     @fact = Fact.new(fact_params)
 
-    respond_to do |format|
-      if @fact.save
-        format.html { redirect_to @fact, notice: 'Fact was successfully created.' }
-        format.json { render :show, status: :created, location: @fact }
-      else
-        format.html { render :new }
-        format.json { render json: @fact.errors, status: :unprocessable_entity }
-      end
+    if @fact.save
+      render json: @fact
+    else
+      not_found
     end
   end
 

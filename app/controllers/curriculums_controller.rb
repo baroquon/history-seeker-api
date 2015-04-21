@@ -22,14 +22,10 @@ class CurriculumsController < ApplicationController
 
   def create
     @curriculum = Curriculum.new(curriculum_params)
-    respond_to do |format|
-      if @curriculum.save
-        format.html { redirect_to @curriculum, notice: 'Curriculum was successfully created.' }
-        format.json { render :show, status: :created, location: @curriculum }
-      else
-        format.html { render :new }
-        format.json { render json: @curriculum.errors, status: :unprocessable_entity }
-      end
+    if @curriculum.save
+      render json: @curriculum
+    else
+      render json: @curriculum.errors, status: :unprocessable_entity
     end
   end
 

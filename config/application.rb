@@ -22,7 +22,7 @@ module HistoricityBackend
     config.middleware.insert_before 0, "Rack::Cors" do
       allow do
         origins '*'
-        resource '*', :headers => :any, :methods => [:get, :post, :options]
+        resource "*", headers: :any, methods: [:get, :post, :put, :delete, :options]
       end
     end
     # Do not swallow errors in after_commit/after_rollback callbacks.
