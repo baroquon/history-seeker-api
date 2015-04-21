@@ -1,31 +1,27 @@
 class CurriculumsController < ApplicationController
-  before_action :set_curriculum, only: [:show, :edit, :update, :destroy]
+  before_action :set_curriculum, only: [:edit, :update, :destroy]
 
-  # GET /curriculums
-  # GET /curriculums.json
   def index
     @curriculums = Curriculum.all
+
+    render json: @curriculums
   end
 
-  # GET /curriculums/1
-  # GET /curriculums/1.json
   def show
+    @curriculum = Curriculum.find(params[:id])
+
+    render json: @curriculum
   end
 
-  # GET /curriculums/new
   def new
     @curriculum = Curriculum.new
   end
 
-  # GET /curriculums/1/edit
   def edit
   end
 
-  # POST /curriculums
-  # POST /curriculums.json
   def create
     @curriculum = Curriculum.new(curriculum_params)
-
     respond_to do |format|
       if @curriculum.save
         format.html { redirect_to @curriculum, notice: 'Curriculum was successfully created.' }
@@ -69,6 +65,6 @@ class CurriculumsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def curriculum_params
-      params.require(:curriculum).permit(:title, :user_id)
+      params.require(:curriculum).permit(:title, :user_id, :fact_ids => [])
     end
 end

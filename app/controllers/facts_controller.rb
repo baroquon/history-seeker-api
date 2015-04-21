@@ -1,15 +1,18 @@
 class FactsController < ApplicationController
-  before_action :set_fact, only: [:show, :edit, :update, :destroy]
+  before_action :set_fact, only: [:edit, :update, :destroy]
 
   # GET /facts
   # GET /facts.json
   def index
     @facts = Fact.all
+    render json: @facts
   end
 
   # GET /facts/1
   # GET /facts/1.json
   def show
+    @fact = Fact.find(params[:id])
+    render json: @fact
   end
 
   # GET /facts/new

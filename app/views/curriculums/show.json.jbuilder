@@ -1,1 +1,1 @@
-json.extract! @curriculum, :id, :title, :user_id, :created_at, :updated_at
+json.curriculum @curriculum, :id, :title, :user_id, :created_at, :updated_at, :facts
