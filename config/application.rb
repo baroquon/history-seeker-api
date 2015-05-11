@@ -21,7 +21,8 @@ module HistoricityBackend
     # config.i18n.default_locale = :de
     config.middleware.insert_before 0, "Rack::Cors" do
       allow do
-        origins 'development.historicity.divshot.io'
+        #origins 'development.historicity.divshot.io'
+        origins 'localhost:4200'
         resource "*", headers: :any, methods: [:get, :post, :put, :delete, :options]
       end
     end
