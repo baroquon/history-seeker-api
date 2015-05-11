@@ -1,4 +1,4 @@
-class SessionsController < ApplicationController
+class SessionsController < Devise::SessionsController
   before_action :set_user, only: [:edit, :update, :destroy]
   def index
     @users = User.all
