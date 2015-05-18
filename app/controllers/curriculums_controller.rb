@@ -1,5 +1,4 @@
 class CurriculumsController < ApplicationController
-  before_filter :authenticate_user_from_token!
   before_action :set_curriculum, only: [:edit, :update, :destroy]
 
   def index

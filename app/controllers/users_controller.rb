@@ -28,16 +28,11 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    respond_to do |format|
-      format.json do
-        self.resource = warden.authenticate!(auth_options)
-        sign_in(resource_name, resource)
-        data = {
-          token: self.resource.authentication_token,
-          email: self.resource.email
-        }
-        render json: data, status: 201
-      end
+    @user = User.new(user_params)
+    if @user.save
+      render json: @user
+    else
+      not_found
     end
   end
 
@@ -72,6 +67,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:first_name, :middle_name, :last_name, :role, :date_of_birth, :notes, :teacher_id)
+      params.require(:user).permit(:first_name, :middle_name, :last_name, :role, :date_of_birth, :notes, :teacher_id, :email, :password)
     end
 end
