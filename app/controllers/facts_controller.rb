@@ -68,6 +68,6 @@ class FactsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fact_params
-      params.require(:fact).permit(:title, :description, :start_date, :end_date, :testable, :lat, :lng)
+      params.require(:fact).permit(:title, :description, :start_date, :end_date, :testable, :lat, :lng, :additional_info_link)
     end
 end

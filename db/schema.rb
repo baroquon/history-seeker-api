@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150511144833) do
+ActiveRecord::Schema.define(version: 20150520133524) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,8 +38,9 @@ ActiveRecord::Schema.define(version: 20150511144833) do
     t.boolean  "testable"
     t.decimal  "lat"
     t.decimal  "lng"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.string   "additional_info_link"
   end
 
   create_table "users", force: :cascade do |t|
