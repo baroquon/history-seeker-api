@@ -12,7 +12,7 @@ Fact.create(
   end_date: '6/11/1860',
   lat: '39.8016667',
   lng: '-89.6436111',
-  addditional_info_link: 'https://www.whitehouse.gov/1600/presidents/abrahamlincoln'
+  additional_info_link: 'https://www.whitehouse.gov/1600/presidents/abrahamlincoln'
 )
 Fact.create(
   title: 'South Carolina secedes from the Union.',
@@ -21,7 +21,7 @@ Fact.create(
   end_date: '20/12/1860',
   lat: '34.0298',
   lng: '-80.8966',
-  addditional_info_link: 'http://www.ushistory.org/us/32e.asp'
+  additional_info_link: 'http://www.ushistory.org/us/32e.asp'
 )
 Fact.create(
   title: 'The Confederate States of America is formed',
@@ -30,7 +30,7 @@ Fact.create(
   end_date: '09/02/1861',
   lat: '32.3617',
   lng: '-86.2792',
-  addditional_info_link: 'http://www.history.com/topics/american-civil-war/confederate-states-of-america'
+  additional_info_link: 'http://www.history.com/topics/american-civil-war/confederate-states-of-america'
 )
 Fact.create(
   title: 'Abraham Lincoln is sworn in as 16th President of the United States of America.',
@@ -39,7 +39,7 @@ Fact.create(
   end_date: '04/03/1861',
   lat: '38.9047',
   lng: '-77.0164',
-  addditional_info_link: 'https://www.whitehouse.gov/1600/presidents/abrahamlincoln'
+  additional_info_link: 'https://www.whitehouse.gov/1600/presidents/abrahamlincoln'
 )
 Fact.create(
   title: 'Battle of Fort Sumter',
@@ -48,7 +48,7 @@ Fact.create(
   end_date: '14/04/1861',
   lat: '32.783',
   lng: '-79.9333',
-  addditional_info_link: 'http://www.civilwar.org/battlefields/fort-sumter.html'
+  additional_info_link: 'http://www.civilwar.org/battlefields/fort-sumter.html'
 )
 Fact.create(
   title: 'Robert E. Lee, former Superintendent of West Point, is offered command of the Union Army.',
@@ -57,7 +57,7 @@ Fact.create(
   end_date: '15/04/1861',
   lat: '38.9047',
   lng: '-77.0164',
-  addditional_info_link: 'http://www.civilwar.org/education/history/biographies/robert-e-lee.html'
+  additional_info_link: 'http://www.civilwar.org/education/history/biographies/robert-e-lee.html'
 )
 Fact.create(
   title: 'President Lincoln begins a blockade against Southern ports.',
@@ -66,7 +66,7 @@ Fact.create(
   end_date: '19/04/1861',
   lat: '29.9500',
   lng: '-90.0667',
-  addditional_info_link: 'https://history.state.gov/milestones/1861-1865/blockade'
+  additional_info_link: 'https://history.state.gov/milestones/1861-1865/blockade'
 )
 Fact.create(
   title: 'Robert E. Lee resigns his commission in the United States Army.',
@@ -75,7 +75,7 @@ Fact.create(
   end_date: '20/04/1861',
   lat: '37.5333',
   lng: '-77.4667',
-  addditional_info_link: 'http://www.civilwar.org/education/history/biographies/robert-e-lee.html'
+  additional_info_link: 'http://www.civilwar.org/education/history/biographies/robert-e-lee.html'
 )
 Fact.create(
   title: 'First Battle of Bull Run or First Manassas',
@@ -84,5 +84,5 @@ Fact.create(
   end_date: '21/07/1861',
   lat: '38.7514',
   lng: '-77.4764',
-  addditional_info_link: 'http://www.civilwar.org/battlefields/bullrun.html'
+  additional_info_link: 'http://www.civilwar.org/battlefields/bullrun.html'
 )
