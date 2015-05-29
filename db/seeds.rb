@@ -79,7 +79,10 @@ Fact.create(
 )
 Fact.create(
   title: 'First Battle of Bull Run or First Manassas',
-  description: 'This was the first major land battle of the armies in Virginia. Here the Confederate Army defeated the Federal and General Thomas Jackson earned the nickname "Stonewall."',
+  description: '
+  <p>This was the first major land battle of the armies in Virginia. Here the Confederate Army defeated the Federal and General Thomas Jackson earned the nickname "Stonewall."</p>
+  <iframe width="420" height="315" src="https://www.youtube.com/embed/mXd9fPxbObM" frameborder="0" allowfullscreen></iframe>
+  ',
   start_date: '21/07/1861',
   end_date: '21/07/1861',
   lat: '38.7514',
