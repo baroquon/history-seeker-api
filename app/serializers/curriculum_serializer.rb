@@ -1,3 +1,3 @@
 class CurriculumSerializer < ActiveModel::Serializer
-  attributes :id, :title, :fact_ids
+  attributes :id, :description, :title, :fact_ids
 end
