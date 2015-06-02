@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   belongs_to :teacher, class_name: "User"
   has_many :curriculums
   has_many :assignments
+  has_many :facts
 
   private
     def set_auth_token

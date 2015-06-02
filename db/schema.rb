@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150530185332) do
+ActiveRecord::Schema.define(version: 20150602161412) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,7 +53,10 @@ ActiveRecord::Schema.define(version: 20150530185332) do
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
     t.string   "additional_info_link"
+    t.integer  "user_id"
   end
+
+  add_index "facts", ["user_id"], name: "index_facts_on_user_id", using: :btree
 
   create_table "taggings", force: :cascade do |t|
     t.integer  "tag_id"
@@ -105,4 +108,5 @@ ActiveRecord::Schema.define(version: 20150530185332) do
 
   add_foreign_key "assignments", "users"
   add_foreign_key "curriculums", "users"
+  add_foreign_key "facts", "users"
 end

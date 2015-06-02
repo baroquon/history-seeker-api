@@ -39,14 +39,10 @@ class FactsController < ApplicationController
   # PATCH/PUT /facts/1
   # PATCH/PUT /facts/1.json
   def update
-    respond_to do |format|
-      if @fact.update(fact_params)
-        format.html { redirect_to @fact, notice: 'Fact was successfully updated.' }
-        format.json { render :show, status: :ok, location: @fact }
-      else
-        format.html { render :edit }
-        format.json { render json: @fact.errors, status: :unprocessable_entity }
-      end
+    if @fact.update(fact_params)
+      render json: @fact
+    else
+      render json: @fact.errors
     end
   end
 
@@ -68,6 +64,6 @@ class FactsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fact_params
-      params.require(:fact).permit(:title, :description, :start_date, :end_date, :testable, :lat, :lng, :additional_info_link, :tag_list)
+      params.require(:fact).permit(:title, :description, :start_date, :end_date, :testable, :lat, :lng, :additional_info_link, :tag_list, :user_id)
     end
 end

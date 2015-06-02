@@ -75,6 +75,7 @@ Fact.create(
   end_date: '20/04/1861',
   lat: '37.5333',
   lng: '-77.4667',
+  tag_list: 'Civil War, person, Robert E Lee',
   additional_info_link: 'http://www.civilwar.org/education/history/biographies/robert-e-lee.html'
 )
 Fact.create(
@@ -87,5 +88,6 @@ Fact.create(
   end_date: '21/07/1861',
   lat: '38.7514',
   lng: '-77.4764',
+  tag_list: 'Civil, War, manassas',
   additional_info_link: 'http://www.civilwar.org/battlefields/bullrun.html'
 )
