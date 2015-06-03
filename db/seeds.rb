@@ -108,7 +108,7 @@ Fact.create(
   end_date: '-2099',
   lat: '31.3222',
   lng: '45.6361',
-  tag_list: 'Poetry, Gilgamesh, Classical, Literature'
+  tag_list: 'Poetry, Gilgamesh, Classical, Literature',
   additional_info_link: 'http://www.learner.org/courses/worldlit/gilgamesh/'
 )
 Fact.create(
@@ -123,7 +123,7 @@ Fact.create(
 )
 Fact.create(
   title: 'The Tet Offensive.',
-  description: 'On Tet, a Vietnamese holiday known for peace and reunion, the South Vietnamese National Liberation Forces attack populated areas known to have strong US presences, starting a period of heavy losses on both sides that would last for nearly 8 months. The Tet Offensive devastated US morale, shifting public opinion against the war.',  
+  description: 'On Tet, a Vietnamese holiday known for peace and reunion, the South Vietnamese National Liberation Forces attack populated areas known to have strong US presences, starting a period of heavy losses on both sides that would last for nearly 8 months. The Tet Offensive devastated US morale, shifting public opinion against the war.',
   start_date: '1968-01-29',
   end_date: '1968-09-23',
   lat: '16.7500',
@@ -142,22 +142,22 @@ Fact.create(
   additional_info_link: 'http://my.ilstu.edu/~jabraun/students/prattwp/facts.htm'
 )
 Fact.create(
-  title: 'The Fall of the Berlin Wall.', 
-  description: 'Following the Peaceful Revolution, the German Democratic Republic announces that they will allow private travel between East and West Germany. Demolition began the following summer.', 
+  title: 'The Fall of the Berlin Wall.',
+  description: 'Following the Peaceful Revolution, the German Democratic Republic announces that they will allow private travel between East and West Germany. Demolition began the following summer.',
   start_date: '1989-11-09',
   end_date: '1989-11-09',
   lat: '52.5161',
   lng: '13.3769',
-  tag_list: 'Germany, Berlin Wall, Cold War'
+  tag_list: 'Germany, Berlin Wall, Cold War',
   additional_info_link: 'http://www.history.co.uk/shows/the-rise-and-fall-of-the-berlin-wall'
 )
 Fact.create(
   title: 'The Mongol Empire Invades Korea.',
-  description: 'Korea is invaded by the Mongol Empire. In 1259, Korea became a vassal of the Mongol Yuan Dynasty and would remain such for approximately 80 years.' 
+  description: 'Korea is invaded by the Mongol Empire. In 1259, Korea became a vassal of the Mongol Yuan Dynasty and would remain such for approximately 80 years.',
   start_date: '1231',
   end_date: '1259',
   lat: '37.9667',
   lng: '126.550',
-  tag_list: 'Korea, Mongol Empire, Military'
+  tag_list: 'Korea, Mongol Empire, Military',
   additional_info_link: 'http://www.localhistories.org/korea.html'
 )
