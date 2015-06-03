@@ -101,16 +101,16 @@ Fact.create(
   tag_list: 'Titanic',
   additional_info_link: 'http://www.nationalarchives.gov.uk/education/resources/life-aboard-titanic/'
 )
-Fact.create(
-  title:'The Epic of Gilgamesh.',
-  description: 'Considered by many to be the earliest piece of great literature, the Epic of Gilgamesh follows the king of Uruk through various mythic adventures, including his survival of a worldwide flood.',
-  start_date: '-2599',
-  end_date: '-2099',
-  lat: '31.3222',
-  lng: '45.6361',
-  tag_list: 'Poetry, Gilgamesh, Classical, Literature',
-  additional_info_link: 'http://www.learner.org/courses/worldlit/gilgamesh/'
-)
+#Fact.create(
+#  title:'The Epic of Gilgamesh.',
+#  description: 'Considered by many to be the earliest piece of great literature, the Epic of Gilgamesh follows the king of Uruk through various mythic adventures, including his survival of a worldwide flood.',
+#  start_date: '-2599',
+#  end_date: '-2099',
+#  lat: '31.3222',
+#  lng: '45.6361',
+#  tag_list: 'Poetry, Gilgamesh, Classical, Literature',
+#  additional_info_link: 'http://www.learner.org/courses/worldlit/gilgamesh/'
+#)
 Fact.create(
   title: 'The Council of Trent.',
   description: 'Catholic leaders as well as some members of the Catholic church meet to discuss and decide upon the future of the church. One notable decree concerned which Scriptures were to be considered canonical.',
@@ -154,8 +154,8 @@ Fact.create(
 Fact.create(
   title: 'The Mongol Empire Invades Korea.',
   description: 'Korea is invaded by the Mongol Empire. In 1259, Korea became a vassal of the Mongol Yuan Dynasty and would remain such for approximately 80 years.',
-  start_date: '1231',
-  end_date: '1259',
+  start_date: '1231-01-01',
+  end_date: '1259-12-12',
   lat: '37.9667',
   lng: '126.550',
   tag_list: 'Korea, Mongol Empire, Military',
