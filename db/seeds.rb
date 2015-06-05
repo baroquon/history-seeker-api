@@ -161,3 +161,133 @@ Fact.create(
   tag_list: 'Korea, Mongol Empire, Military',
   additional_info_link: 'http://www.localhistories.org/korea.html'
 )
+Fact.create(
+  title: 'William Shakespeare is Baptized.', 
+  description: 'William Shakespeare, regarded by many to be the greatest writer in the English language, is baptized in Stratford-upon-Avon. His specific date of birth is unknown.',
+  start_date: '1564-04-26',
+  end_date: '1564-04-26',
+  lat: '52.1900',
+  lng: '-1.7100',
+  tag_list: 'theatre, art, Shakespeare, person',
+  additional_info_link: 'http://shakespeare.mit.edu, http://www.shakespeareinamericancommunities.org/education/life-william-shakespeare'
+)
+Fact.create(
+  title: 'William Shakespeare Dies.',
+  description: 'William Shakespeare dies at age 52. In his lifetime, he wrote approximately 38 plays and 154 sonnets.',
+  start_date: '1616-04-23',
+  end_date: '1616-04-23',
+  lat: '52.1900',
+  lng: '1.7100',
+  tag_list: 'theatre, art, Shakespeare, person',
+  additional_info_link: 'http://shakespeare.mit.edu, http://www.shakespeareinamericancommunities.org/education/life-william-shakespeare'
+)
+Fact.create(
+  title: 'Moliere is Born.',
+  description: 'Playwright and actor Jean-Baptiste Poquelin, who would come to be known by the name Moliere, is born in Paris, France. Notable works include Tartuffe, The Miser, and the Doctor In Spite of Himself.',
+  start_date: '1622-01-15',
+  end_date: '1622-01-15',
+  lat: '48.8567',
+  lng: '2.3508',
+  tag_list: 'theatre, art, comedy, Moliere, person',
+  additional_info_link: 'http://www.discoverfrance.net/France/Theatre/Moliere/moliere.shtml',
+) 
+Fact.create(
+  title: 'Moliere Dies.',
+  description: 'Playwright and actor Jean-Baptiste Poquelin, better known under his pseudonym Moliere, dies in Paris, France after suffering a coughing fit while performing in a production of his last play The Imaginary Invalid.',
+  start_date: '1673-02-17',
+  end_date: '1673-02-17',
+  lat: '48.8567',
+  lng: '2.3508',
+  tag_list: 'theatre, art, comedy, Moliere, person',
+  additional_info_link: 'http://www.discoverfrance.net/France/Theatre/Moliere/moliere.shtml',
+) 
+Fact.create(
+  title: 'The Assassination of JFK.',
+  description: 'While traveling in a motorcade in Dallas, Texas, US President John Fitzgerald Kennedy is shot twice and is pronounced dead thirty minutes later at Parkland Hospital.',
+  start_date: '1963-11-22',
+  end_date: '1963-11-22',
+  lat: '32.8111',
+  lng: '-96.8383',
+  tag_list: 'United States, politics, assassination, Kennedy, person',
+  additional_info_link: 'http://www.jfklibrary.org/JFK/JFK-in-History/November-22-1963-Death-of-the-President.aspx'
+)
+Fact.create(
+  title: 'Soren Kierkegaard is Born.',
+  description: 'Existential philosopher and theologian Soren Kierkegaard is born in Copenhagen, Denmark.',
+  start_date: '1813-05-05',
+  end_date: '1813-05-05',
+  lat: '55.6761',
+  lng: '12.5683',
+  tag_list: 'philosophy, existentialism, person, Kierkegaard', 
+  additional_info_link: 'http://sorenkierkegaard.org'
+)
+Fact.create(
+  title: 'Sored Kierkegaard Dies.',
+  description: 'Believed by many to be the father of existentialism, Soren Kierkegaard dies at Frederiks Hospital in Copenhagen.',
+  start_date: '1855-11-11',
+  end_date: '1855-11-11',
+  lat: '55.6761',
+  lng: '12.5683',
+  tag_list: 'philosophy, existentialism, person, Kierkegaard',
+  additional_info_link: 'http://sorenkierkegaard.org'
+)
+Fact.create(
+  title: 'Adolf Hitler Commits Suicide.',
+  description: 'Fuhrer and dictator of Germany Adolf Hitler shoots and kills himself in Berlin, Germany.',
+  start_date: '1945-04-30',
+  end_date: '1945-04-30',
+  lat: '52.5167',
+  lng: '13.3833',
+  tag_list: 'World War II, Hitler, military, person',
+  additional_info_link: 'http://www.historylearningsite.co.uk/adolf_hitler.htm'
+)
+Fact.create(
+  title: 'Japan Signs the Instrument of Surrender.',
+  description: 'Following the bombings of Hiroshima and Nagasaki, Japanese leaders sign the Instrument of Surrender aboard the USS Missouri in Tokyo Bay, officially ending World War II. Japan&apos;s surrender had been announced August 15, 1945.',
+  start_date: '1945-09-02',
+  end_date: '1945-09-02',
+  lat: '35.4167',
+  lng: '139.7833',
+  tag_list: 'World War II, Japan, military',
+  additional_info_link: 'http://www.archives.gov/exhibits/featured_documents/japanese_surrender_document/ '
+)
+Fact.create(
+  title: 'The Bombing of Hiroshima.',
+  description: 'In an effort to put a swift end to the war, the United States detonates an atomic bomb over the Japanese city Hiroshima. The death toll is between 90,000 and 166,000, approximately 20,000 of which were military.',
+  start_date: '1945-08-06',
+  end_date: '1945-08-06',
+  lat: '34.39468',
+  lng: '132.45462',
+  tag_list: 'World War II, Japan, military',
+  additional_info_link: 'http://avalon.law.yale.edu/20th_century/mp07.asp'
+)
+Fact.create(
+  title: 'The Bombing of Nagasaki.',
+  description: 'The United States detonates an atomic bomb over the Japanese city Nagasaki. Somewhere between 39,000 and 80,000 people die because of the bomb and its effects.',
+  start_date: '1945-08-09',
+  end_date: '1945-08-09',
+  lat: '32.77372',
+  lng: '129.86325',
+  tag_list: 'World War II, Japan, military',
+  additional_info_link: 'http://avalon.law.yale.edu/20th_century/mp07.asp'
+)
+Fact.create(
+  title: 'Yangzhou Massacre.',
+  description: 'Qing troops conduct mass killings of people residing in the Chinese city Yangzhou. The actual number of fatalities is unknown, but some believe the number to be near 800,000.',
+  start_date: '1645-05-20',
+  end_date: '1645-05-30',
+  lat: '32.4000',
+  lng: '119.4167',
+  tag_list: 'massacre, China, military',
+  additional_info_link: 'https://eastasiastudent.net/china/classical/yangzhou-shiri-ji-1/'
+)
+Fact.create(
+  title: 'Emperor Xuantong Puyi Abdicates the Throne.',
+  description: 'Six-Year-Old Emperor Xuantong Puyi is forced to abdicate his position as emperor, marking the end of Imperial Dynasties in China and the beginning of the Republic of China.',
+  start_date: '1912-02-12',
+  end_date: '1912-02-12',
+  lat: '31.9147',
+  lng: '116.3906',
+  tag_list: 'China, dynasty, royalty, Puyi, military',
+  additional_info_link: 'http://bhoffert.faculty.noctrl.edu/HST265/10.EndOfDynasty.html'
+)
