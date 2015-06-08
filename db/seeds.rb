@@ -314,8 +314,8 @@ Fact.create(
 Fact.create(
   title: 'Jesus Christ is Crucified.',
   description: 'By the order of Roman prefect Pontius Pilate, Jesus of Nazareth is executed by crucifixion. The exact year remains unknown, but scholars believe Jesus was executed between the years 30 and 36.',
-  start_date: '30',
-  end_date: '30',
+  start_date: '0030-01-01',
+  end_date: '0030-01-01',
   lat: '31.7768',
   lng: '35.2294',
   tag_list: 'Jesus, person, Christianity',
@@ -324,8 +324,8 @@ Fact.create(
 Fact.create(
   title: 'Jesus Christ is Baptized.',
   description: 'Jesus of Nazareth is baptized by John the Baptist in the Jordan river. The exact year is uncertain, but scholars place the baptismal somewhere between the years 24 and 30.',
-  start_date: '24',
-  end_date: '24',
+  start_date: '0024-01-01',
+  end_date: '0024-01-01',
   lat: '33.1867',
   lng: '35.6192',
   tag_list: 'Jesus, person, Christianity',
