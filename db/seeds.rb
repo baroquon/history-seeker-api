@@ -101,16 +101,16 @@ Fact.create(
   tag_list: 'Titanic',
   additional_info_link: 'http://www.nationalarchives.gov.uk/education/resources/life-aboard-titanic/'
 )
-#Fact.create(
-#  title:'The Epic of Gilgamesh.',
-#  description: 'Considered by many to be the earliest piece of great literature, the Epic of Gilgamesh follows the king of Uruk through various mythic adventures, including his survival of a worldwide flood.',
-#  start_date: '-2599',
-#  end_date: '-2099',
-#  lat: '31.3222',
-#  lng: '45.6361',
-#  tag_list: 'Poetry, Gilgamesh, Classical, Literature',
-#  additional_info_link: 'http://www.learner.org/courses/worldlit/gilgamesh/'
-#)
+Fact.create(
+  title:'The Epic of Gilgamesh.',
+  description: 'Considered by many to be the earliest piece of great literature, the Epic of Gilgamesh follows the king of Uruk through various mythic adventures, including his survival of a worldwide flood.',
+  start_date: '2599-12-2 BC',
+  end_date: '2099-12-2 BC',
+  lat: '31.3222',
+  lng: '45.6361',
+  tag_list: 'Poetry, Gilgamesh, Classical, Literature',
+  additional_info_link: 'http://www.learner.org/courses/worldlit/gilgamesh/'
+)
 Fact.create(
   title: 'The Council of Trent.',
   description: 'Catholic leaders as well as some members of the Catholic church meet to discuss and decide upon the future of the church. One notable decree concerned which Scriptures were to be considered canonical.',
