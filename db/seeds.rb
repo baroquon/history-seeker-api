@@ -162,7 +162,7 @@ Fact.create(
   additional_info_link: 'http://www.localhistories.org/korea.html'
 )
 Fact.create(
-  title: 'William Shakespeare is Baptized.', 
+  title: 'William Shakespeare is Baptized.',
   description: 'William Shakespeare, regarded by many to be the greatest writer in the English language, is baptized in Stratford-upon-Avon. His specific date of birth is unknown.',
   start_date: '1564-04-26',
   end_date: '1564-04-26',
@@ -190,7 +190,7 @@ Fact.create(
   lng: '2.3508',
   tag_list: 'theatre, art, comedy, Moliere, person',
   additional_info_link: 'http://www.discoverfrance.net/France/Theatre/Moliere/moliere.shtml',
-) 
+)
 Fact.create(
   title: 'Moliere Dies.',
   description: 'Playwright and actor Jean-Baptiste Poquelin, better known under his pseudonym Moliere, dies in Paris, France after suffering a coughing fit while performing in a production of his last play The Imaginary Invalid.',
@@ -200,7 +200,7 @@ Fact.create(
   lng: '2.3508',
   tag_list: 'theatre, art, comedy, Moliere, person',
   additional_info_link: 'http://www.discoverfrance.net/France/Theatre/Moliere/moliere.shtml',
-) 
+)
 Fact.create(
   title: 'The Assassination of JFK.',
   description: 'While traveling in a motorcade in Dallas, Texas, US President John Fitzgerald Kennedy is shot twice and is pronounced dead thirty minutes later at Parkland Hospital.',
@@ -218,7 +218,7 @@ Fact.create(
   end_date: '1813-05-05',
   lat: '55.6761',
   lng: '12.5683',
-  tag_list: 'philosophy, existentialism, person, Kierkegaard', 
+  tag_list: 'philosophy, existentialism, person, Kierkegaard',
   additional_info_link: 'http://sorenkierkegaard.org'
 )
 Fact.create(
@@ -290,4 +290,44 @@ Fact.create(
   lng: '116.3906',
   tag_list: 'China, dynasty, royalty, Puyi, military',
   additional_info_link: 'http://bhoffert.faculty.noctrl.edu/HST265/10.EndOfDynasty.html'
+)
+Fact.create(
+  title: 'Tsar Nicholas II is executed.',
+  description: 'Tsar Nicholas II, along with his family and a few members of his staff, are executed extrajudicially by members of the Bolshevik secret police.',
+  start_date: '1918-07-16',
+  end_date: '1918-07-17',
+  lat: '56.8442',
+  lng: '60.6097',
+  tag_list: 'Russia, royalty, execution, war, military',
+  additional_info_link: 'http://www.eyewitnesstohistory.com/nicholas.htm'
+)
+Fact.create(
+  title: 'Nelson Mandela is Elected President of South Africa.',
+  description: 'Receiving over 62% of the vote, Nelson Mandela becomes the first President of South Africa elected post-Apartheid. This 1994 election is considered to be the official end of the Apartheid era in South Africa.',
+  start_date: '1994-04-27',
+  end_date: '1994-04-27',
+  lat: '-25.7461',
+  lng: '28.1881',
+  tag_list: 'Nelson Mandela, South Africa, Apartheid, person',
+  additional_info_link: 'http://www.pbs.org/wgbh/pages/frontline/shows/mandela/etc/cron.html, http://www.anc.org.za/show.php?id=9917'
+)
+Fact.create(
+  title: 'Jesus Christ is Crucified.',
+  description: 'By the order of Roman prefect Pontius Pilate, Jesus of Nazareth is executed by crucifixion. The exact year remains unknown, but scholars believe Jesus was executed between the years 30 and 36.',
+  start_date: '30',
+  end_date: '30',
+  lat: '31.7768',
+  lng: '35.2294',
+  tag_list: 'Jesus, person, Christianity',
+  additional_info_link: 'http://www.pbs.org/wgbh/pages/frontline/shows/religion/jesus/crucifixion.html, http://www.catholiceducation.org/en/controversy/common-misconceptions/the-facts-of-crucifixion.html, http://www.pbs.org/wgbh/pages/frontline/shows/religion/jesus/arrest.html'
+)
+Fact.create(
+  title: 'Jesus Christ is Baptized.',
+  description: 'Jesus of Nazareth is baptized by John the Baptist in the Jordan river. The exact year is uncertain, but scholars place the baptismal somewhere between the years 24 and 30.',
+  start_date: '24',
+  end_date: '24',
+  lat: '33.1867',
+  lng: '35.6192',
+  tag_list: 'Jesus, person, Christianity',
+  additional_info_link: 'http://www.pbs.org/wgbh/pages/frontline/shows/religion/portrait/john.html'
 )
