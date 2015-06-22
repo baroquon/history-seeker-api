@@ -91,3 +91,101 @@ Fact.create(
   tag_list: 'Civil, War, manassas',
   additional_info_link: 'http://www.civilwar.org/battlefields/bullrun.html'
 )
+
+# History of Computing
+computing_facts = Curriculum.create(
+  title: "The History of Computing",
+  description: "This curriculum outlines the history of computing, from the abacus to the modern day."
+)
+Fact.create(
+  title: 'Abacus invented',
+  description: 'The earliest known tool for use in computation was the abacus, and it was thought to have been invented in Babylon circa 2400 BC. Its original style of usage was by lines drawn in sand with pebbles. Abaci, of a more modern design, are still used as calculation tools today. This was the first known computer and most advanced system of calculation known to date - preceding Greek methods by 2,000 years.
+
+  !["Boulier1" by HB - Own work. Licensed under Public Domain via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Boulier1.JPG#/media/File:Boulier1.JPG](http://upload.wikimedia.org/wikipedia/commons/e/ea/Boulier1.JPG)',
+  start_date: '2400-01-01 BC',
+  end_date: '2400-01-01 BC',
+  lat: '32.5364',
+  lng: '44.4208',
+  additional_info_link: 'http://en.wikipedia.org/wiki/Abacus',
+  curriculums: [computing_facts]
+)
+Fact.create(
+  title: 'Pāṇini formulates the grammar of Sanskrit',
+  description: 'In the 5th century BC in ancient India, the grammarian Pāṇini formulated the grammar of Sanskrit in 3959 rules known as the Ashtadhyayi which was highly systematized and technical. Panini used metarules, transformations and recursions.',
+  start_date: '400-01-01 BC',
+  end_date: '400-01-01 BC',
+  lat: '34.1500',
+  lng: '71.7333',
+  additional_info_link: 'http://en.wikipedia.org/wiki/P%C4%81%E1%B9%87ini',
+  curriculums: [computing_facts]
+)
+Fact.create(
+  title: 'Archimedes calculates intriguing problems using the principle of balance',
+  description: 'In the 3rd century BC, Archimedes used the mechanical principle of balance (see Archimedes Palimpsest#Mathematical content) to calculate mathematical problems, such as the number of grains of sand in the universe (The sand reckoner), which also required a recursive notation for numbers (e.g., the myriad myriad).',
+  start_date: '240-01-01 BC',
+  end_date: '240-01-01 BC',
+  lat: '37.0833',
+  lng: '15.2833',
+  additional_info_link: 'http://en.wikipedia.org/wiki/Archimedes',
+  curriculums: [computing_facts]
+)
+Fact.create(
+  title: 'The Antikythera mechanism is created.',
+  description: 'The Antikythera mechanism is believed to be the earliest known mechanical analog computer. It was designed to calculate astronomical positions. It was discovered in 1901 in the Antikythera wreck off the Greek island of Antikythera, between Kythera and Crete, and has been dated to circa 100 BC.',
+  start_date: '100-01-01 BC',
+  end_date: '100-01-01 BC',
+  lat: '39.0000',
+  lng: '22.0000',
+  additional_info_link: 'http://en.wikipedia.org/wiki/Antikythera_mechanism',
+  curriculums: [computing_facts]
+)
+Fact.create(
+  title: 'Astrolabe invented by Hipparchus',
+  description: 'An early astrolabe was invented in the Hellenistic world in 150 BC and is often attributed to Hipparchus. A marriage of the planisphere and dioptra, the astrolabe was effectively an analog calculator capable of working out several different kinds of problems in spherical astronomy.',
+  start_date: '150-01-01 BC',
+  end_date: '150-01-01 BC',
+  lat: '40.4292',
+  lng: '29.7211',
+  additional_info_link: 'http://en.wikipedia.org/wiki/Astrolabe',
+  curriculums: [computing_facts]
+)
+Fact.create(
+  title: 'Al-Kindi makes advances in early cryptanalysis',
+  description: 'Al-Kindi is credited with developing a method whereby variations in the frequency of the occurrence of letters could be analyzed and exploited to break ciphers (i.e. cryptanalysis by frequency analysis).',
+  start_date: '840-01-01',
+  end_date: '840-01-01',
+  lat: '32.02',
+  lng: '44.24',
+  additional_info_link: 'http://en.wikipedia.org/wiki/Al-Kindi',
+  curriculums: [computing_facts]
+)
+Fact.create(
+  title: 'Banū Mūsā brothers invent mechanical memory',
+  description: 'The Book of Ingenious Devices describes 100 inventions; the ones which have been reconstructed work as designed. While designed primarily for amusement purposes, they employ innovative engineering technologies such as one-way and two-way valves able to open and close by themselves, mechanical memories, devices to respond to feedback, and delays. Most of these devices were operated by water pressure.',
+  start_date: '840-01-01',
+  end_date: '840-01-01',
+  lat: '37.3946',
+  lng: '62.1133',
+  additional_info_link: 'http://en.wikipedia.org/wiki/Ban%C5%AB_M%C5%ABs%C4%81#Automata',
+  curriculums: [computing_facts]
+)
+Fact.create(
+  title: 'Ramon Llull designs logical machines that later influence Leibniz',
+  description: 'Influenced by the Arabs and Scholasticism, Majorcan philosopher Ramon Llull (1232–1315) devoted a great part of his life to defining and designing several logical machines that, by combining simple and undeniable philosophical truths, could produce all possible knowledge. These machines were never actually built, as they were more of a thought experiment to produce new knowledge in systematic ways; although they could make simple logical operations, they still needed a human being for the interpretation of results. Moreover, they lacked a versatile architecture, each machine serving only very concrete purposes. In spite of this, Llull\'s work had a strong influence on Gottfried Leibniz (early 18th century), who developed his ideas further, and built several calculating tools using them.',
+  start_date: '1260-01-01',
+  end_date: '1260-01-01',
+  lat: '39.34',
+  lng: '2.39',
+  additional_info_link: 'http://en.wikipedia.org/wiki/Ramon_Llull',
+  curriculums: [computing_facts]
+)
+Fact.create(
+  title: 'John Napier discovers logarithms',
+  description: 'His work, Mirifici Logarithmorum Canonis Descriptio (1614) contained fifty-seven pages of explanatory matter and ninety pages of tables of numbers related to natural logarithms (see Napierian logarithm). The book also has an excellent discussion of theorems in spherical trigonometry, usually known as Napier\'s Rules of Circular Parts. Modern English translations of both Napier\'s books on logarithms, and their description can be found on the web, as well as a discussion of Napier\'s Bones (see below) and Promptuary (another early calculating device). His invention of logarithms was quickly taken up at Gresham College, and prominent English mathematician Henry Briggs visited Napier in 1615. Among the matters they discussed were a re-scaling of Napier\'s logarithms, in which the presence of the mathematical constant e (more accurately, e times a large power of 10 rounded to an integer) was a practical difficulty. Napier delegated to Briggs the computation of a revised table. The computational advance available via logarithms, the converse of powered numbers or exponential notation, was such that it made calculations by hand much quicker. The way was opened to later scientific advances, in astronomy, dynamics, and other areas of physics.',
+  start_date: '1614-01-01',
+  end_date: '1614-01-01',
+  lat: '55.5711',
+  lng: '3.1120',
+  additional_info_link: 'http://en.wikipedia.org/wiki/John_Napier',
+  curriculums: [computing_facts]
+)
