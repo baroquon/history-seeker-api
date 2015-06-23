@@ -41,12 +41,15 @@ group :development, :test do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-
   # We want to clean the database for tests
   gem 'database_cleaner'
 
+  # We will use rspec for our tests
   gem 'rspec-rails', '~> 3.0'
+
+  # Debugging is nice
+  gem 'pry'
+
+  gem 'geokit-rails'
 end
 gem 'rails_12factor', group: :production
