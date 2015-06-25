@@ -428,3 +428,23 @@ Fact.create(
   additional_info_link: 'http://en.wikipedia.org/wiki/John_Napier',
   curriculums: [computing_facts]
 )
+Fact.create(
+  title: 'Ptolemy Publishes Geographia.',
+  description: 'Ptolemy publishes Geographia, in essence, a compilation of second century Roman knowledge and speculation regarding geography.',
+  start_date: '150',
+  end_date: '150',
+  lat: '31.2000',
+  lng: '29.9167',
+  tag_list: 'geography, literature',
+  additional_info_link: 'http://geography.about.com/od/historyofgeography/a/ptolemy.htm'
+)
+Fact.create(
+  title: 'Duyfken Makes Landfall in Queensland.',
+  description: 'Dutch ship Duyfken, captained by Williem Janszoon, lands on the Cape York Peninsula. This is the first recorded instance of Europeans setting foot on Australian soil.',
+  start_date: '1606-02-26',
+  end_date: '1606-02-26',
+  lat: '-12.2167',
+  lng: '141.7333',
+  tag_list: 'Australia, Exploration, Netherlands',
+  additional_info_link:' http://www.australia.gov.au/about-australia/australian-story/european-discovery-and-colonisation'
+)
