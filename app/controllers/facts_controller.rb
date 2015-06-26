@@ -2,12 +2,9 @@ class FactsController < ApplicationController
   before_action :set_fact, only: [:edit, :update, :destroy]
 
   def index
-    if params[:queryParams]
-      query_params = params[:queryParams]
-      if query_params[:user_id] == "none"
-        @facts = Fact.where(user_id: nil)
-        render json: @facts
-      end
+    if params[:user_id] == "none"
+      @facts = Fact.where(user_id: nil)
+      render json: @facts
     else
       @facts = Fact.all
       render json: @facts
