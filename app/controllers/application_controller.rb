@@ -48,5 +48,9 @@ class ApplicationController < ActionController::Base
         render json: 'No authorization provided.'
       end
     end
+
+    def not_found
+      raise ActionController::RoutingError.new('Not Found')
+    end
 end
 
