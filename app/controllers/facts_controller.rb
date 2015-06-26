@@ -1,31 +1,31 @@
 class FactsController < ApplicationController
   before_action :set_fact, only: [:edit, :update, :destroy]
 
-  # GET /facts
-  # GET /facts.json
   def index
-    @facts = Fact.all
-    render json: @facts
+    if params[:queryParams]
+      query_params = params[:queryParams]
+      if query_params[:user_id] == "none"
+        @facts = Fact.where(user_id: nil)
+        render json: @facts
+      end
+    else
+      @facts = Fact.all
+      render json: @facts
+    end
   end
 
-  # GET /facts/1
-  # GET /facts/1.json
   def show
     @fact = Fact.find(params[:id])
     render json: @fact
   end
 
-  # GET /facts/new
   def new
     @fact = Fact.new
   end
 
-  # GET /facts/1/edit
   def edit
   end
 
-  # POST /facts
-  # POST /facts.json
   def create
     @fact = Fact.new(fact_params)
 
@@ -36,8 +36,6 @@ class FactsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /facts/1
-  # PATCH/PUT /facts/1.json
   def update
     if @fact.update(fact_params)
       render json: @fact
@@ -46,8 +44,6 @@ class FactsController < ApplicationController
     end
   end
 
-  # DELETE /facts/1
-  # DELETE /facts/1.json
   def destroy
     @fact.destroy
     respond_to do |format|
