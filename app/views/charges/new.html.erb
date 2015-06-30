@@ -1,0 +1,17 @@
+<%= form_tag charges_path do %>
+  <article>
+    <label class="amount">
+      <span>Amount: $9.00</span>
+    </label>
+  </article>
+  <select  name="plan" id="plan">
+    <%= @plans.each do |plan| %>
+      <option value='<%= plan[:plan] %>'><%= plan[:cost] %></option>
+    <% end %>
+  </select>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="A month's subscription"
+          data-amount="900"></script>
+<% end %>
