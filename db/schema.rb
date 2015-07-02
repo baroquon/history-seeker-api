@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150602161412) do
+ActiveRecord::Schema.define(version: 20150630185208) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "accounts", force: :cascade do |t|
+    t.string   "email"
+    t.boolean  "active",     default: true
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
 
   create_table "assignments", force: :cascade do |t|
     t.string   "description"
@@ -100,8 +107,10 @@ ActiveRecord::Schema.define(version: 20150602161412) do
     t.inet     "last_sign_in_ip"
     t.string   "authentication_token",   default: "", null: false
     t.string   "assignment"
+    t.integer  "account_id"
   end
 
+  add_index "users", ["account_id"], name: "index_users_on_account_id", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["teacher_id"], name: "index_users_on_teacher_id", using: :btree
@@ -109,4 +118,5 @@ ActiveRecord::Schema.define(version: 20150602161412) do
   add_foreign_key "assignments", "users"
   add_foreign_key "curriculums", "users"
   add_foreign_key "facts", "users"
+  add_foreign_key "users", "accounts"
 end
