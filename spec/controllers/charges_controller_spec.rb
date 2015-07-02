@@ -16,7 +16,7 @@ RSpec.describe ChargesController, type: :controller do
     expect(customer.email).to eq('jason@bateman.com')
   end
 
-  it "subscribed to a plan" do
+  it "subscribes to a plan" do
     Stripe::Plan.create(
       :amount => 900,
       :interval => 'month',

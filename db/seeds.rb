@@ -16,7 +16,7 @@ Fact.create(
 )
 Fact.create(
   title: 'South Carolina secedes from the Union.',
-  description: 'On December 20, 1860, by a vote of 169-0, the South Carolina legislature enacted an "ordinance" that "the union now subsisting between South Carolina and other States, under the name of &apos;The United States of America,&apos; is hereby dissolved."',
+  description: 'On December 20, 1860, by a vote of 169-0, the South Carolina legislature enacted an "ordinance" that "the union now subsisting between South Carolina and other States, under the name of \'The United States of America,\' is hereby dissolved."',
   start_date: '1860-12-20',
   end_date: '1860-12-20',
   lat: '34.0298',
@@ -52,7 +52,7 @@ Fact.create(
 )
 Fact.create(
   title: 'Robert E. Lee, former Superintendent of West Point, is offered command of the Union Army.',
-  description: 'Lee declines Lincoln&apos;s offer to lead the Union Army.',
+  description: 'Lee declines Lincoln\'s offer to lead the Union Army.',
   start_date: '1861-04-15',
   end_date: '1861-04-15',
   lat: '38.9047',
@@ -243,7 +243,7 @@ Fact.create(
 )
 Fact.create(
   title: 'Japan Signs the Instrument of Surrender.',
-  description: 'Following the bombings of Hiroshima and Nagasaki, Japanese leaders sign the Instrument of Surrender aboard the USS Missouri in Tokyo Bay, officially ending World War II. Japan&apos;s surrender had been announced August 15, 1945.',
+  description: 'Following the bombings of Hiroshima and Nagasaki, Japanese leaders sign the Instrument of Surrender aboard the USS Missouri in Tokyo Bay, officially ending World War II. Japan\'s surrender had been announced August 15, 1945.',
   start_date: '1945-09-02',
   end_date: '1945-09-02',
   lat: '35.4167',
@@ -447,4 +447,124 @@ Fact.create(
   lng: '141.7333',
   tag_list: 'Australia, Exploration, Netherlands',
   additional_info_link:' http://www.australia.gov.au/about-australia/australian-story/european-discovery-and-colonisation'
+)
+Fact.create(
+  title: 'Beethoven is Baptized.',
+  description: 'Ludwig Van Beethoven, one of the most influential musical composers to ever live, is Baptized in Bonn, Germany. His actual date of birth is not known.',
+  start_date: '1770-12-17',
+  end_date: '1770-12-17',
+  lat: '50.7340',
+  lng: '7.0998',
+  tag_list: 'Beethoven, music, person, Germany',
+  additional_info_link: 'http://classicalmusic.about.com/od/biographies/p/beethoven.htm'
+)
+Fact.create(
+  title: 'Beethoven Dies.',
+  description: 'Following months of bedridden illness, Ludwig Van Beethoven dies in Vienna. Beethoven is considered to be one of the most influential musical composers of all time.',
+  start_date: '1827-03-26',
+  end_date: '1827-03-26',
+  lat: '48.2000',
+  lng: '16.3667',
+  tag_list: 'Beethoven, music, person, Germany',
+  additional_info_link: 'http://classicalmusic.about.com/od/biographies/p/beethoven.htm'
+)
+Fact.create(
+  title: 'Premier of Beethoven\'s Fifth Symphony.',
+  description: 'One of his most universally recognizable works, Ludwig Van Beethoven\'s Symphony No. 5 in C Minor premiers at the Theater an der Wien in Vienna.',
+  start_date: '1808-12-22',
+  end_date: '1808-12-22',
+  lat: '48.1992',
+  lng: '16.3636',
+  tag_list: 'Beethoven, music, Germany, symphony',
+  additional_info_link: 'http://classicalmusic.about.com/od/biographies/p/beethoven.htm'
+)
+Fact.create(
+  title: 'Wolfgang Amadeus Mozart is born.',
+  description: 'Born Johannes Chrysostomus Wolfgangus Theophilus Mozart in Salzburg, Mozart would become one of the most influential composers of all time, writing 25 symphonies by the time he was seventeen-years-old.',
+  start_date: '1756-01-27',
+  end_date: '1756-01-27',
+  lat: '47.8000',
+  lng: '13.0333',
+  tag_list: 'person, Mozart, music, composer, birth',
+  additional_info_link: 'http://www.mozartways.com/index.php'
+)
+Fact.create(
+  title: 'Wolfgang Amadeus Mozart dies.',
+  description: 'On December 5, 1791, Wolfgang Amadeus Mozart dies at the age of 35 due to a painful illness. The actual sickness that claimed his life is unknown. Mozart is widely regarded as one of the most influential composers in history.',
+  start_date: '1791-12-05',
+  end_date: '1791-12-05',
+  lat: '48.2000',
+  lng: '16.3667',
+  tag_list: 'person, Mozart, music, composer',
+  additional_info_link: 'http://www.mozartways.com/index.php'
+)
+Fact.create(
+  title: 'Mozart\'s Don Giovanni Premiers.',
+  description: 'Considered by some to be musically flawless, Wolfgang Amadeus Mozart\'s iconic opera Don Giovanni premiers at the Teatro di Praga.',
+  start_date: '1787-10-29',
+  end_date: '1787-10-29',
+  lat: '50.0808',
+  lng: '14.4139',
+  tag_list: 'Mozart, opera, music',
+  additional_info_link: 'http://www.mozartways.com/index.php'
+)
+Fact.create(
+  title: 'Joseph Haydn is Born.',
+  description: 'Composer Franz Joseph Haydn is born in Rohrau, Austria. He would come to be known as the Father of the Symphony.',
+  start_date: '1732-03-31',
+  end_date: '1732-03-31',
+  lat: '48.0667',
+  lng: '16.8500',
+  tag_list: 'person, music, symphony, composer',
+  additional_info_link: 'http://www.britannica.com/biography/Joseph-Haydn'
+)
+Fact.create(
+  title: 'Joseph Haydn Dies.',
+  description: 'Following years of debilitating illness, composer Franz Joseph Haydn dies in bed at the age of 77 at his home in Vienna.',
+  start_date: '1809-05-31',
+  end_date: '1809-05-31',
+  lat: '48.193933',
+  lng: '16.346524',
+  tag_list: 'person, music, symphony, composer',
+  additional_info_link: 'http://www.britannica.com/biography/Joseph-Haydn'
+)
+Fact.create(
+  title: 'Haydn\'s Creation Premiers.',
+  description: 'Although Franz Joseph Haydn\'s oratorio the Creation had audiences for rehearsals beginning almost a year prior, the Creation officially premiered on March 19, 1799 at the Burgtheater in Vienna.',
+  start_date: '1799-03-19',
+  end_date: '1799-03-19',
+  lat: '48.21028900146484',
+  lng: '16.36141967773438',
+  tag_list: 'person, music, creation, Austria',
+  additional_info_link: 'https://philharmonia.org/haydnscreation/'
+)
+Fact.create(
+  title: 'Handel is born.',
+  description: 'Composer Georg Friedrich Handel is born in Halle in Thuringia, Germany. Beethoven referred to Handel as the greatest composer of all time.',
+  start_date: '1685-02-23',
+  end_date: '1685-02-23',
+  lat: '51.4833',
+  lng: '11.9667',
+  tag_list: 'person, music, composer',
+  additional_info_link: 'http://www.baroquemusic.org/bqxhandel.html'
+)
+Fact.create(
+  title: 'Handel dies.',
+  description: 'Renowned composer Georg Friedrich Handel dies at his home in London, England at the age of 74.',
+  start_date: '1759-04-14',
+  end_date: '1759-04-14',
+  lat: '51.5130',
+  lng: '-0.1459',
+  tag_list: 'person, music, composer',
+  additional_info_link: 'http://www.baroquemusic.org/bqxhandel.html'
+)
+Fact.create(
+  title: 'Handel\'s Messiah Premiers.',
+  description: 'Known for its Hallelujah chorus, Handel\'s Messiah premiers in Dublin, Ireland.',
+  start_date: '1742-04-13',
+  end_date: '1742-04-13',
+  lat: '53.34412',
+  lng: '-6.27004',
+  tag_list: 'music, Messiah',
+  additional_info_link: 'http://www.baroquemusic.org/bqxhandel.html'
 )
