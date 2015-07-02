@@ -1,0 +1,100 @@
+.stripe-button-el{
+  width: 100%;
+  margin: 1em 0 !important;
+  span{
+    padding: .5em !important;
+    font-size: 1.5em !important;
+    height: auto !important;
+  }
+}
+.action-buttons-container{
+  margin: 1em 0 0;
+  text-align: right;
+}
+.btn-accent{
+  background-color: $accent;
+  &:hover{
+    background-color: darken($accent, 5%);
+  }
+  &:focus, &:active{
+    color: #fff;
+  }
+}
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus{
+  outline: 0 none;
+}
+
+.styless-button{
+  background: transparent none;
+  border: 0 none transparent;
+  text-align: left;
+  color: $brand-primary;
+  &:hover{
+    text-decoration: underline;
+  }
+  *{
+    font-size: 16px;
+    font-weight: 400;
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+}
+.btn-add{
+  position: fixed;
+  bottom: 1em;
+  right: .25em;
+  z-index: 9999999999999;
+  box-shadow: $box-shadow;
+  transition: 1s all;
+}
+
+.btn-supplemental{
+  background-color: #999;
+  position: fixed;
+  bottom: 4em;
+  right: .25em;
+  z-index: 9999999999999;
+  box-shadow: $box-shadow;
+  transition: 1s all;
+  &:hover {
+    background-color: #777;
+    &:after{
+      background-color: $accent;
+      border-radius: 8px;
+      box-shadow: $box-shadow;
+      text-transform: capitalize;
+      content: 'Filter Facts';
+      clear: both;
+      color: #fff;
+      display: block;
+      font-size: 15px;
+      padding: 5px;
+      position: absolute;
+      right: 66px;
+      top: 14px;
+    }
+  }
+  &.myFacts{
+    bottom: 7em;
+    &:hover{
+      &:after{
+        content: 'Filter My Facts';
+      }
+    }
+  }
+  &.allFacts{
+    &:hover{
+      &:after{
+        content: 'Filter All Facts';
+      }
+    }
+  }
+}
+
+.notes-button{
+  position: fixed;
+  right: .5em;
+  top: 5em;
+  z-index: 9999999999999;
+}
