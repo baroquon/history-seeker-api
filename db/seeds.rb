@@ -568,3 +568,93 @@ Fact.create(
   tag_list: 'music, Messiah',
   additional_info_link: 'http://www.baroquemusic.org/bqxhandel.html'
 )
+Fact.create(
+  title: 'Plato is Born.',
+  description: 'Philosopher Plato is born in Athens, Greece. Along with his teacher Socrates and his student Aristotle, Plato can be credited as one of the founders of what is known as Western thought.',
+  start_date: '0428-01-01 BC',
+  end_date: '0423-12-31 BC',
+  lat: '37.9667',
+  lng: '23.7167',
+  tag_list: 'person, Plato, philosophy, Greece',
+  additional_info_link: 'http://plato.stanford.edu/entries/plato/'
+)
+Fact.create(
+  title: 'Plato Dies.',
+  description: 'Although the circumstances of his death remain unknown, Plato died between 348 and 347 BC in Athens, Greece. Plato\'s influence can be seen in nearly all Western thought which proceeded him.',
+  start_date: '0348-01-01 BC',
+  end_date: '0347-12-31 BC',
+  lat: '37.9667',
+  lng: '23.7167',
+  tag_list: 'person, Plato, philosophy, Greece',
+  additional_info_link: 'http://plato.stanford.edu/entries/plato/'
+)
+Fact.create(
+  title: 'Plato Writes The Republic.',
+  description: 'In the Republic, Plato seeks to define and discuss terms for political philosophy. Written as a dialogue between Socrates and various other voices, the Republic has become a cornerstone not only in political theory but in theory of forms as well.',
+  start_date: '0380-01-01 BC',
+  end_date: '0380-12-31BC',
+  lat: '37.9667',
+  lng: '23.7167',
+  tag_list: 'Plato, philosophy, Greece',
+  additional_info_link: 'http://plato.stanford.edu/entries/plato-ethics-politics/'
+)
+Fact.create(
+  title: 'Aristotle is Born.',
+  description: 'Philosopher Aristotle is born in Stagira, Greece. Aristotle made notable, if not revolutionary, contributions to multiple disciplines (among them metaphysics, theology, psychology, logic, theatre, and biology), establishing him as a thinker of great influence in Western thought, rivaled only by his teacher Plato.',
+  start_date: '0384-01-01 BC',
+  end_date: '0384-12-31 BC',
+  lat: '40.530121800000000000',
+  lng: '23.752276100000017000',
+  tag_list: 'person, Aristotle, philosophy, Greece, Theology',
+  additional_info_link: 'http://plato.stanford.edu/entries/aristotle/'
+)
+Fact.create(
+  title: 'Aristotle Dies.',
+  description: 'A year after fleeing Athens to avoid prosecution over alleged impiety, philosopher Aristotle dies in Chalcis, Greece of a digestive disease. Aristotle is widely regarded as a figure of nearly unparalleled influence in Western thought. His work continues to be a topic of academic debate and interpretation today.',
+  start_date: '0322-01-01 BC',
+  end_date: '0322-12-31 BC',
+  lat: '38.410923400000000000',
+  lng: '23.549041499999930000',
+  tag_list: 'person, Aristotle, philosophy, Greece, Theology',
+  additional_info_link: 'http://plato.stanford.edu/entries/aristotle/'
+)
+Fact.create(
+  title: 'Aristotle Writes Nicomachean Ethics.',
+  description: 'His most recognizable work, Aristotle\'s Nicomachean Ethics would become one of the foundations of Western ethical thought. Although the exact years of writing remain unknown, it is believed Aristotle wrote Nichomachean Ethics some time between 350 and 340 BC.',
+  start_date: '0350-01-01 BC',
+  end_date: '0340-12-31 BC',
+  lat: '37.9667',
+  lng: '23.7167',
+  tag_list: 'Aristotle, philosophy, Greece, ethics',
+  additional_info_link: 'http://plato.stanford.edu/entries/aristotle/'
+)
+ Fact.create(
+  title: 'St. Augustine of Hippo is Born.',
+  description: 'Augustine of Hippo is born in Thagaste to Monica of Hippo, who was sainted as well. Saint Augustine is known for developing his own influential approaches to philosophy and theology, making foundational contributions to the developing Christian faith.',
+  start_date: '0354-11-13',
+  end_date: '0354-11-13',
+  lat: '36.2864',
+  lng: '7.9511',
+  tag_list: 'person, Augustine, philosophy, theology',
+  additional_info_link: 'http://plato.stanford.edu/entries/augustine/'
+)
+ Fact.create(
+  title: 'St. Augustine of Hippo Dies.',
+  description: 'Following many days with a fever, Saint Augustine, Bishop of Hippo, dies. Posthumously, he would come to be known as the patron saint of brewers due to his pre-conversion life spent partying. His contributions to philosophy and theology would inform much of the Western thinking which proceeded him.',
+  start_date: '0430-08-28',
+  end_date: '0430-08-28',
+  lat: '36.9000',
+  lng: '7.7667',
+  tag_list: 'person, Augustine, philosophy, theology',
+  additional_info_link: 'http://plato.stanford.edu/entries/augustine/'
+)
+ Fact.create(
+  title: 'Augustine\'s City of God is Published.',
+  description: 'Written as a response to claims that Christianity was to blame for the downfall of Rome, the City of God is Saint Augustine\'s exploration of many of theology\'s greatest challenges, including free will, the existence of evil, and the suffering of the righteous.',
+  start_date: '0426-01-01',
+  end_date: '0426-12-31',
+  lat: '36.9000',
+  lng: '7.7667',
+  tag_list: 'Augustine, philosophy, theology, literature',
+  additional_info_link: 'http://plato.stanford.edu/entries/augustine/'
+)
