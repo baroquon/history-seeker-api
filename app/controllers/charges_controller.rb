@@ -11,18 +11,19 @@ class ChargesController < ApplicationController
   end
 
   def create
-    @email       = params[:stripeEmail]
-    @token       = params[:stripeToken]
-    @plan        = params[:plan]
-    @password    = params[:password]
-    @first_name  = params[:first_name]
-    @last_name   = params[:last_name]
+    @email                    = params[:stripeEmail]
+    @token                    = params[:stripeToken]
+    @plan                     = params[:plan]
+    @password                 = params[:password]
+    @password_confirmation    = params[:password_confirmation]
+    @first_name               = params[:first_name]
+    @last_name                = params[:last_name]
 
     @user = User.find_by(email: @email)
     # need some logic if the user canceled and are restarting their account
     if @user
       flash[:error] = "This email is already taken."
-      redirect_to charges_path
+      redirect_to new_charge_path
     else
       customer = Stripe::Customer.create(
         :email   => @email,
@@ -30,9 +31,9 @@ class ChargesController < ApplicationController
         :plan    => @plan
       )
       if customer.id
-        @account = Account.new
+        @account = Account.new(:stripe_id => customer.id)
         @account.save
-        @user = User.new(:first_name => @first_name, :last_name => @last_name, :role => 'teacher', :email => @email, :password => @password, :password_confirmation => @password, :account => @account)
+        @user = User.new(:first_name => @first_name, :last_name => @last_name, :role => 'teacher', :email => @email, :password => @password, :password_confirmation => @password_confirmation, :account => @account)
         @user.save
       end
     end
