@@ -31,7 +31,7 @@ class ChargesController < ApplicationController
         :plan    => @plan
       )
       if customer.id
-        @account = Account.new(:stripe_id => customer.id)
+        @account = Account.new(:stripe_id => customer.id, :subscription_type => @plan)
         @account.save
         @user = User.new(:first_name => @first_name, :last_name => @last_name, :role => 'teacher', :email => @email, :password => @password, :password_confirmation => @password_confirmation, :account => @account)
         @user.save
