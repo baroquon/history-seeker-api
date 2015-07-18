@@ -16,12 +16,12 @@ gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'stripe-ruby-mock', :require => 'stripe_mock'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'active_model_serializers'
+gem 'geokit-rails'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'database_cleaner'
   gem 'rspec-rails', '~> 3.0'
   gem 'pry'
-  gem 'geokit-rails'
 end
 gem 'rails_12factor', group: :production
