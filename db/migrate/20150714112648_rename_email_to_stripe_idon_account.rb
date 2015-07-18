@@ -1,5 +1,5 @@
 class RenameEmailToStripeIdonAccount < ActiveRecord::Migration
   def change
-    rename_column :accounts, :email, :stripe_id
+    add_column :accounts, :stripe_id, :string
   end
 end
