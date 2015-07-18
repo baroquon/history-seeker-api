@@ -25,3 +25,5 @@ group :development, :test do
   gem 'pry'
 end
 gem 'rails_12factor', group: :production
+gem 'rspec_api_documentation'
+gem 'factory_girl_rails'

@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 20150715154505) do
   enable_extension "plpgsql"
 
   create_table "accounts", force: :cascade do |t|
-    t.string   "stripe_id"
     t.boolean  "active",            default: true
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false
+    t.string   "stripe_id"
     t.string   "subscription_type"
   end
 
