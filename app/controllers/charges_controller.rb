@@ -25,17 +25,15 @@ class ChargesController < ApplicationController
       flash[:error] = "This email is already taken."
       redirect_to new_charge_path
     else
-      customer = Stripe::Customer.create(
-        :email   => @email,
-        :source  => @token,
-        :plan    => @plan
-      )
-      if customer.id
-        @account = Account.new(:stripe_id => customer.id, :subscription_type => @plan)
-        @account.save
-        @user = User.new(:first_name => @first_name, :last_name => @last_name, :role => 'teacher', :email => @email, :password => @password, :password_confirmation => @password_confirmation, :account => @account)
-        @user.save
-      end
+      AccountManager.create_customer({
+        email: @email,
+        token: @token,
+        plan: @plan,
+        first_name: @first_name,
+        last_name: @last_name,
+        password: @password,
+        password_confirmation: @password_confirmation
+      })
     end
   rescue Stripe::CardError => e
     render json: e.message
@@ -43,9 +41,7 @@ class ChargesController < ApplicationController
 
   def destroy
     account = current_user.account
-    customer = Stripe::Customer.retrieve(account.stripe_id)
-    subscription = customer.subscriptions.data[0]
-    subscription.delete # Delete via Stripe API cal
+    AccountManager.cancel_subscription(account)
     head 204
   end
 end

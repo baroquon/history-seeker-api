@@ -5,7 +5,7 @@ describe AccountManager do
 
   before {
     StripeMock.start
-    stripe_helper.create_plan(:id => 'hs9', :amount => 1500)
+    stripe_helper.create_plan(:id => 'hs1', :amount => 1500)
   }
   after { StripeMock.stop }
 
@@ -14,7 +14,7 @@ describe AccountManager do
       {
         email: "johnny@depp.co",
         token: stripe_helper.generate_card_token,
-        plan: 'hs9',
+        plan: 'hs1',
         first_name: "Johnny",
         last_name: "Depp",
         password: "p@ssw0rd",
@@ -32,6 +32,13 @@ describe AccountManager do
       expect {
         AccountManager.create_customer(customer_options)
       }.to change{Account.count}.by(1)
+    end
+
+    it "creates a Stripe Customer" do
+      AccountManager.create_customer(customer_options)
+      account = Account.last
+      customer = Stripe::Customer.retrieve(account.stripe_id)
+      expect(customer.subscriptions.data[0].plan[:id]).to eq('hs1')
     end
   end
 end
