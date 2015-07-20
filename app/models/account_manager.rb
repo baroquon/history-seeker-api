@@ -2,6 +2,13 @@ module AccountManager
   def self.cancel_subscription(account)
     customer = Stripe::Customer.retrieve(account.stripe_id)
     subscription = customer.subscriptions.data[0]
+    if Rails.env.test?
+      # NOTE: Dear god this is stupid.  This is a bug related to stripe mock.  We
+      # should remove this from time to time to see if the stripe-mock library
+      # has fixed the problem that causes this.  In the meantime, this will fix a
+      # bug that would be present in the tests.
+      subscription.instance_variable_set("@opts", {})
+    end
     subscription.delete # Delete via Stripe API cal
   end
 
