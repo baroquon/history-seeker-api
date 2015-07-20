@@ -40,4 +40,12 @@ class ChargesController < ApplicationController
   rescue Stripe::CardError => e
     render json: e.message
   end
+
+  def destroy
+    account = current_user.account
+    customer = Stripe::Customer.retrieve(account.stripe_id)
+    subscription = customer.subscriptions.data[0]
+    subscription.delete # Delete via Stripe API cal
+    head 204
+  end
 end
