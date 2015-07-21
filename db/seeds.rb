@@ -658,3 +658,93 @@ Fact.create(
   tag_list: 'Augustine, philosophy, theology, literature',
   additional_info_link: 'http://plato.stanford.edu/entries/augustine/'
 )
+Fact.create(
+  title: 'Athanasius is Born.',
+  description: 'Athanasius is born in Alexandria, Egypt. He would become one of the most ardent defenders of the Christian doctrine of Trinitarianism, the belief that God the Father, Jesus the Son, and the Holy Spirit are all of the same being, none ranking higher in importance or origin than each other.',
+  start_date: '0296-01-01',
+  end_date: '0298-12-31',
+  lat: '31.2000',
+  lng: '29.9167',
+  tag_list: 'Egypt, person, Athanasius, theology, philosophy',
+  additional_info_link: 'http://www.ccel.org/ccel/athanasius'
+)
+Fact.create(
+  title: 'Athanasius Dies.',
+  description: 'Athanasius dies in bed at his home in Alexandria, Egypt. Despite being persecuted into exile for many years of his episcopate, Athanasius held firm to the doctrine of Trinitarianism. Athanasius would be sainted and venerated by the Catholic church.',
+  start_date: '0373-05-02',
+  end_date: '0373-05-02',
+  lat: '31.2000',
+  lng: '29.9167',
+  tag_list: 'Egypt, person, Athanasius, theology, philosophy',
+  additional_info_link: 'http://www.ccel.org/ccel/athanasius'
+)
+Fact.create(
+  title: 'On the Incarnation of the Word of God.',
+  description: 'In his Incarnation of the Word of God, Athanasius explores why Christ, the embodiment of God\'s Word, was sent to earth. Here, Athanasius discusses what is known as Trinitarianism, a doctrine which is a pillar of the Christian faith. The date and location listed are speculative.',
+  start_date: '0325-01-01',
+  end_date: '0325-12-31',
+  lat: '31.4000',
+  lng: '29.7167',
+  tag_list: 'Egypt, Athanasius, theology, literature, philosophy',
+  additional_info_link: 'http://www.spurgeon.org/~phil/history/ath-inc.htm'
+)
+Fact.create(
+  title: 'Leonardo da Vinci is Born.',
+  description: 'Renowned arist Leonardo da Vinci is born in Vinci. Da Vinci would come to be known as the ideal Renaissance man, contributing to more than ten disparate disciplines, including science, botany, literature, sculpture, and painting.',
+  start_date: '1452-04-15',
+  end_date: '1452-04-15',
+  lat: '43.7833',
+  lng: '10.9167',
+  tag_list: 'DaVinci, person, Italy, Renaissance, science, art',
+  additional_info_link: 'https://www.lib.rochester.edu/index.cfm?PAGE=3456'
+)
+Fact.create(
+  title: 'Leondardo da Vinci Dies.',
+  description: 'The Renaissance ideal man, Leonardo da Vinci dies at the Chateau du Clos Luce in Amboise, France. The number of disciplines to which he substantially contributed establishes Leonardo da Vinci as one of the greatest and most influential artists to ever live.',
+  start_date: '1519-05-02',
+  end_date: '1519-05-02',
+  lat: '47.4100',
+  lng: '0.9914',
+  tag_list: 'DaVinci, person, Italy, Renaissance, science, art',
+  additional_info_link: 'https://www.lib.rochester.edu/index.cfm?PAGE=3456'
+)
+Fact.create(
+  title: 'Leonardo da Vinci Paints the Mona Lisa.',
+  description: 'Leonardo da Vinci paints the Mona Lisa, one of the most iconic and referenced pieces of art. The Mona Lisa is prominently known for the subject\'s ambiguous expression. The exact dates da Vinci worked on the Mona Lisa are unknown. The painting is on display at the Louvre.',
+  start_date: '1503-01-01',
+  end_date: '1517-12-31',
+  lat: '48.8611',
+  lng: '2.3364',
+  tag_list: 'DaVinci, Italy, Renaissance, art, painting',
+  additional_info_link: 'https://www.lib.rochester.edu/index.cfm?PAGE=3456'
+)
+Fact.create(
+  title: 'Michelangelo is Born.',
+  description: 'Renowned artist Michelangelo di Lodovico Buonarroti Simoni is born in Caprese, Italy. While living, he was considered the greatest artist alive. He is still regarded as one of the greatest artists to ever live.',
+  start_date: '1475-03-06',
+  end_date: '1475-03-06',
+  lat: '43.6333',
+  lng: '11.9833',
+  tag_list: 'Michelangelo, person, art, Italy, Renaissance',
+  additional_info_link: 'http://cecelia.physics.indiana.edu/life/art/michelangelo.html'
+)
+Fact.create(
+  title: 'Michelangelo Dies.',
+  description: 'One of the greatest and most influential artists of all time, sculptor, painter, poet, and architect Michelangelo di Lodovico Buonarroti Simoni dies in Rome.',
+  start_date: '1564-02-18',
+  end_date: '1564-02-18',
+  lat: '41.9000',
+  lng: '12.5000',
+  tag_list: 'Michelangelo, person, art, Italy, Renaissance',
+  additional_info_link: 'http://cecelia.physics.indiana.edu/life/art/michelangelo.html'
+)
+Fact.create(
+  title: 'Michelangelo\'s Painting on the Ceiling of the Sistine Chapel in Unveiled.',
+  description: 'Commissioned in 1508 by Pope Julius II, Michelangelo finally unveils his painting on the Sistine Chapel ceiling, one of the most revered and recognized works in Western art.',
+  start_date: '1512-10-31',
+  end_date: '1512-10-31',
+  lat: '41.9031',
+  lng: '12.4544',
+  tag_list: 'Michelangelo, person, art, Italy, Renaissance',
+  additional_info_link: 'http://cecelia.physics.indiana.edu/life/art/michelangelo.html'
+)
