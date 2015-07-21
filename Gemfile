@@ -23,6 +23,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'rspec-rails', '~> 3.0'
   gem 'pry'
+  gem 'foreman'
 end
 gem 'rails_12factor', group: :production
 gem 'rspec_api_documentation'
