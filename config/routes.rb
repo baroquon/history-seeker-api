@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources  :accounts
   resources  :assignments
   resources  :charges
+  match 'charges', to: 'charges#destroy', via: [:delete]
 end
