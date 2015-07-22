@@ -19,6 +19,9 @@ $accent-dark: #413240;
 $accent: #745286;
 
 $dark-gray: #555;
+.btn-primary{
+  background-color: $primary !important;
+}
 body{
   margin-top: 60px;
   padding-bottom: 3em;
