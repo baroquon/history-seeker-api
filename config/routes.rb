@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   resources  :assignments
   resources  :charges
   match 'charges', to: 'charges#destroy', via: [:delete]
+
+  root to: 'home#index'
 end
