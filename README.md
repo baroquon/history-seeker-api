@@ -2,7 +2,7 @@
 
 ## Setup
 
-    git clone git@github.com:isotope11/history_seeker_rails_api_brandon.git
+    git clone git@github.com:baroquon/history-seeker-api.git
     bundle
     rake db:setup
 
