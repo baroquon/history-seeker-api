@@ -4,11 +4,15 @@ class FactsController < ApplicationController
   def index
     if params[:user_id] == "none"
       @facts = Fact.where(user_id: nil)
-      render json: @facts
+    elsif params[:related].present?
+      @base_fact = Fact.find(params[:related])
+      @facts = Fact.where(start_date: start_date_range, end_date: end_date_range)
+                   .within(100, :origin => @base_fact)
+                   .where("id not in (?)", @base_fact.id)
     else
       @facts = Fact.all
-      render json: @facts
     end
+    render json: @facts
   end
 
   def show
@@ -50,6 +54,12 @@ class FactsController < ApplicationController
   end
 
   private
+    def start_date_range
+      (@base_fact.start_date - 365)..(@base_fact.start_date + 365)
+    end
+    def end_date_range
+      (@base_fact.end_date - 365)..(@base_fact.end_date + 365)
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_fact
       @fact = Fact.find(params[:id])
